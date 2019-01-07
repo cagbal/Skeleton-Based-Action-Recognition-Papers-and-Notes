@@ -16,8 +16,11 @@ Feel free to contribute. No general rule. Just keep the format for each paper as
 ### Papers:
 **1. SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL
 NETWORKS**
+
 Link: https://arxiv.org/abs/1704.07595
+
 Accuracy on Cross Subject NTU-RGBD: **0.832**
+
 Notes:
 - They introduced **Skeleton Transformer** which is a linear layer and creates a linear combination of the existing joints. 
 - The idea is that the ordering of the joints may not be optimal, this linear layer may create a better ordering.
