@@ -47,3 +47,19 @@ Notes:
 - They apply the CNN to each person then fuse the information by using max. operation. 
 - Extremely low number of parameters. It has around **800K parameters**. 
 - They use 2d dropout with 0.5 probability. 
+
+**3. Skeleton-Based Action Recognition with Synchronous Local and Non-local Spatio-temporal Learning and Frequency Attention**
+
+Link: https://arxiv.org/abs/1811.04237
+
+Code: 
+
+Accuracy on Cross Subject NTU-RGBD: **0.891**
+
+Notes:
+- So many ideas in the paper. Non-local, local data exlotation, reformed softmax and frequency domain analysis. 
+- I want to focus on the frequency domain analysis on this paper. The idea is using frequency domain along with time domain. 
+- The "necessary" frequency components are selected or attended by using a FC based network. This information is later added to the time information by using IFFT.  
+- Amazing accuracy. Outperformed everything with large margin. 
+- For such a big margin, I would expect a code. 
+
