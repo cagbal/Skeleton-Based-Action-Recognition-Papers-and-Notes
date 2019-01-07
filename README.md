@@ -13,6 +13,12 @@ Feel free to contribute. No general rule. Just keep the format for each paper as
     - Bullet point 1
     - Bullet point 2
 
+#### Current Top 2 for NTU-RGBD Cross Subject Split: (Only using Skeleton data, not RGBD)
+|           |               Top 1              |               Top 2              |
+|:---------:|:--------------------------------:|:--------------------------------:|
+| Accuracy: |               0.891              |               0.865              |
+|   Link:   | https://arxiv.org/abs/1811.04237 | https://arxiv.org/abs/1804.06055 |
+
 ### Papers:
 **1. SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL
 NETWORKS**
