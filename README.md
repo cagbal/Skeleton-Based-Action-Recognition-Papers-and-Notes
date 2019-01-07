@@ -19,6 +19,8 @@ NETWORKS**
 
 Link: https://arxiv.org/abs/1704.07595
 
+Code:
+
 Accuracy on Cross Subject NTU-RGBD: **0.832**
 
 Notes:
@@ -28,3 +30,20 @@ Notes:
 - From my experience, it is working fine for 2D CNN based methods.
 - Two stream. Uses both poisition and velocity of the joints. Fusion by concatenation. 
 
+**2. Co-occurrence Feature Learning from Skeleton Data for Action Recognition and
+Detection with Hierarchical Aggregation**
+
+Link: https://arxiv.org/abs/1804.06055
+
+Code: https://github.com/huguyuehuhu/HCN-pytorch (Re-implementation PyTorch Accuracy is %1.5 lower than original)
+
+Accuracy on Cross Subject NTU-RGBD: **0.865**
+
+Notes:
+- My understanding is that they use joints as channels and this helps using the information from different joints at the same time.
+- At some point, they change the joint dimensions and the spatial dimension(x,y,z). Then, convolve it again. So, each joint becomes a channel. To better understand the concept: "If each joint of a skeleton is treated as  a  channel,  then  the  convolution  layer  can  learn  the  co-occurrences from all joints easily" says author in the introduction.
+- Impressive accuracy. 
+- Two stream network. Fusion by concatenation. 
+- They apply the CNN to each person then fuse the information by using max. operation. 
+- Extremely low number of parameters. It has around **800K parameters**. 
+- They use 2d dropout with 0.5 probability. 
