@@ -36,6 +36,11 @@ Notes:
 - From my experience, it is working fine for 2D CNN based methods.
 - Two stream. Uses both poisition and velocity of the joints. Fusion by concatenation. 
 
+
+------------
+
+
+
 **2. Co-occurrence Feature Learning from Skeleton Data for Action Recognition and
 Detection with Hierarchical Aggregation**
 
@@ -54,6 +59,11 @@ Notes:
 - Extremely low number of parameters. It has around **800K parameters**. 
 - They use 2d dropout with 0.5 probability. 
 
+
+------------
+
+
+
 **3. Skeleton-Based Action Recognition with Synchronous Local and Non-local Spatio-temporal Learning and Frequency Attention**
 
 Link: https://arxiv.org/abs/1811.04237
@@ -70,6 +80,10 @@ Notes:
 - For such a big margin, I would expect a code. 
 
 
+------------
+
+
+
 #### Acknowledgement 
-This work has received funding from the European Unions Horizon  2020  research  and  innovation  programme  under  the Marie  Skodowska-Curie  grant  agreement  No  721619  for  the SOCRATES project. 
+This work(Github REPO) has received funding from the European Unions Horizon  2020  research  and  innovation  programme  under  the Marie  Skodowska-Curie  grant  agreement  No  721619  for  the SOCRATES project. 
 
