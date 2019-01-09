@@ -82,8 +82,10 @@ Notes:
 
 ------------
 
-**Other GITHUB Repos for Skeleton-based Action Recognition Papers
+**Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
+
+------------
 
 #### Acknowledgement 
 This work(Github REPO) has received funding from the European Unions Horizon  2020  research  and  innovation  programme  under  the Marie  Skodowska-Curie  grant  agreement  No  721619  for  the SOCRATES project. 
