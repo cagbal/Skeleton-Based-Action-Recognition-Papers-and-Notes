@@ -82,6 +82,24 @@ Notes:
 
 ------------
 
+**4. Interpretable 3D Human Action Analysis with Temporal Convolutional
+Networks**
+
+Link: https://arxiv.org/abs/1704.04516
+
+Code: https://github.com/TaeSoo-Kim/TCNActionRecognition
+
+Accuracy on Cross Subject NTU-RGBD: **0.743**
+
+Notes:
+- Low accuracy. Old paper.(2017)
+- Single stream network using Joint Positions
+- Resnet based 
+- 1D Convolution through temporal domain. All spatial domain is considered at once meaning that the spatial size of kernel is the same as spatial dimension of the input (number of joints x 3 (xyz))
+- The contribution is in interpretable action recognition. They show which motion effects a particular action.  
+
+------------
+
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
 
