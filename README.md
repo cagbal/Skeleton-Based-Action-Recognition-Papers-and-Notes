@@ -104,7 +104,7 @@ Notes:
 
 Link: https://arxiv.org/abs/1801.02475 (but no pdf!)
 
-Code: 
+Code: https://github.com/Qingyang-Xu/Ensem-NN
 
 Accuracy on Cross Subject NTU-RGBD: **0.851**
 
