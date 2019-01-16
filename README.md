@@ -100,6 +100,25 @@ Notes:
 
 ------------
 
+**5. Ensemble One-Dimensional Convolution Neural Networks for Skeleton-Based Action Recognition**
+
+Link: https://arxiv.org/abs/1801.02475 (but no pdf!)
+
+Code: 
+
+Accuracy on Cross Subject NTU-RGBD: **0.851**
+
+Notes:
+- Using ensembles of 4 different subnets - body part net, base net, attention net etc. 
+- Introducing a channel wised attention net which is a FC+Activation+FC+Softmax
+- Two stream 1D CNN. The idea is coming from Interpretable 3D Human Action Analysis with Temporal Convolutional Networks
+- All the subnets are trained independently. I think this is a drawback.  
+- Why would they extract the features of each body part? I don't understand. There are 5 different base-nets. The number of parameter should be enourmous.
+- In general, this paper is a nice reference to ensemble applied to skeleton-based action recoginition.
+- High accuracy. 
+
+------------
+
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
 
