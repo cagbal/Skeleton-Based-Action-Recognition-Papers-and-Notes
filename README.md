@@ -16,8 +16,8 @@ Feel free to contribute. No general rule. Just keep the format for each paper as
 #### Current Top 2 for NTU-RGBD Cross Subject Split: (Only using Skeleton data, not RGBD)
 |           |               Top 1              |               Top 2              |
 |:---------:|:--------------------------------:|:--------------------------------:|
-| Accuracy: |               0.891              |               0.865              |
-|   Link:   | https://arxiv.org/abs/1811.04237 | https://arxiv.org/abs/1804.06055 |
+| Accuracy: |               0.891              |               0.866              |
+|   Link:   | https://arxiv.org/abs/1811.04237 | https://ieeexplore.ieee.org/abstract/document/8588326 |
 
 ### Papers:
 **1. SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL
@@ -116,6 +116,24 @@ Notes:
 - Why would they extract the features of each body part? I don't understand. There are 5 different base-nets. The number of parameter should be enourmous.
 - In general, this paper is a nice reference to ensemble applied to skeleton-based action recoginition.
 - High accuracy. 
+
+------------
+
+**6. Hard Sample Mining and Learning for Skeleton-Based Human Action Recognition and Identification**
+
+Link: https://ieeexplore.ieee.org/abstract/document/8588326
+
+Code: 
+
+Accuracy on Cross Subject NTU-RGBD: **0.866**
+
+Notes:
+- Using Global and Local features. Global features are classical spatio-temporal matrix. However, local features are highly hand engineered relative Hand positions. 
+- Good example for hand engineered features, however, I think it violates the end-to-end learning, because we explicitly state that Hand features are important.(Just my opinion, no offence!)
+- High accuracy. 
+- Two stage network: Temporal and Spatial processing. Temporal domain network is heavily using LSTM which is not good for computation time. 
+- They introduce hard sample mining by selecting the low performance actions. Complex training procedure to avoid overfitting.
+- Human identification part is irrelevant to me.  
 
 ------------
 
