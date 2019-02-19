@@ -16,8 +16,8 @@ Feel free to contribute. No general rule. Just keep the format for each paper as
 #### Current Top 2 for NTU-RGBD Cross Subject Split: (Only using Skeleton data, not RGBD)
 |           |               Top 1              |               Top 2              |
 |:---------:|:--------------------------------:|:--------------------------------:|
-| Accuracy: |               0.891              |               0.866              |
-|   Link:   | https://arxiv.org/abs/1811.04237 | https://ieeexplore.ieee.org/abstract/document/8588326 |
+| Accuracy: |               0.894              |               0.891              |
+|   Link:   | https://arxiv.org/abs/1804.07453 | https://arxiv.org/abs/1811.04237 |
 
 ### Papers:
 **1. SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL
@@ -135,6 +135,23 @@ Notes:
 - They introduce hard sample mining by selecting the low performance actions. Complex training procedure to avoid overfitting.
 - Human identification part is irrelevant to me.  
 
+------------
+
+**7. View Adaptive Neural Networks for High Performance Skeleton-based Human Action Recognition**
+
+Link: https://arxiv.org/abs/1804.07453
+
+Code: 
+
+Accuracy on Cross Subject NTU-RGBD: **0.894**
+
+Notes:
+- Impressive accuracy 
+- No code
+- The idea is cool. They transform the skeletons with a small network so that they all will be aligned. This, surely, reduces the error caused by view variations. 
+- The parameter number is huge, around 10-20 million for state-of-the-art results. There is a good analysis of parameter number vs. accuracy in the paper.
+- There are two networks which are RNN and CNN. They fuse the output of them at the end.
+ 
 ------------
 
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
