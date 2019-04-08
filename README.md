@@ -57,7 +57,7 @@ Notes:
 - Two stream network. Fusion by concatenation. 
 - They apply the CNN to each person then fuse the information by using max. operation. 
 - Extremely low number of parameters. It has around **800K parameters**. 
-- They use 2d dropout with 0.5 probability. 
+- They use dropout with 0.5 probability. 
 
 
 ------------
