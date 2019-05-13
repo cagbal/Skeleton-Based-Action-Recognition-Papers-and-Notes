@@ -1,5 +1,5 @@
 # Skeleton-based Action Recognition Papers and Small Notes About Them
-I am keeping these notes for my research at Fraunhofer IPA. For each paper, I am planning to give link, accuracy on ntu rgbd dataset and some small notes. 
+I am keeping these notes for my research at Fraunhofer IPA. For each paper, I am planning to give a link, accuracy on the NTU-RGBD dataset and some small notes. 
 
 ## Contribution 
 Feel free to contribute. No general rule. Just keep the format for each paper as below. 
@@ -7,7 +7,7 @@ Feel free to contribute. No general rule. Just keep the format for each paper as
 ##### Template:
     **Name of the paper**
     Link: 
-	Code:
+    Code:
     Accuracy on Cross Subject NTU-RGBD: **XX%**
     Notes:
     - Bullet point 1
@@ -31,10 +31,10 @@ Accuracy on Cross Subject NTU-RGBD: **0.832**
 
 Notes:
 - They introduced **Skeleton Transformer** which is a linear layer and creates a linear combination of the existing joints. 
-- The idea is that the ordering of the joints may not be optimal, this linear layer may create a better ordering.
+- The idea is that the ordering of the joints may not be optimal; this linear layer may create a better ordering.
 - How many joints at the end of the Skeleton Transformer? This information is not clear. 
 - From my experience, it is working fine for 2D CNN based methods.
-- Two stream. Uses both poisition and velocity of the joints. Fusion by concatenation. 
+- Two streams. Uses both position and velocity of the joints. Fusion by concatenation. 
 
 
 ------------
@@ -52,7 +52,7 @@ Accuracy on Cross Subject NTU-RGBD: **0.865**
 
 Notes:
 - My understanding is that they use joints as channels and this helps using the information from different joints at the same time.
-- At some point, they change the joint dimensions and the spatial dimension(x,y,z). Then, convolve it again. So, each joint becomes a channel. To better understand the concept: "If each joint of a skeleton is treated as  a  channel,  then  the  convolution  layer  can  learn  the  co-occurrences from all joints easily" says author in the introduction.
+- At some point, they change the joint dimensions and the spatial dimension(x,y,z). Then, convolve it again. So, each joint becomes a channel. To better understand the concept: "If each joint of a skeleton is treated as a channel, then the convolution layer can learn the co-occurrences from all joints easily" says author in the introduction.
 - Impressive accuracy. 
 - Two stream network. Fusion by concatenation. 
 - They apply the CNN to each person then fuse the information by using max. operation. 
@@ -73,11 +73,11 @@ Code:
 Accuracy on Cross Subject NTU-RGBD: **0.891**
 
 Notes:
-- So many ideas in the paper. Non-local, local data exlotation, reformed softmax and frequency domain analysis. 
-- I want to focus on the frequency domain analysis on this paper. The idea is using frequency domain along with time domain. 
-- The "necessary" frequency components are selected or attended by using a FC based network. This information is later added to the time information by using IFFT.  
-- Amazing accuracy. Outperformed everything with large margin. 
-- For such a big margin, I would expect a code. 
+- So many ideas in the paper. Non-local, local data exploitation, reformed softmax and frequency domain analysis. 
+- I want to focus on the frequency domain analysis in this paper. The idea is using frequency domain along with time domain. 
+- The "necessary" frequency components are selected or attended by using an FC based network. This information is later added to the time information by using IFFT.  
+- Amazing accuracy. Outperformed everything with a large margin. 
+- For such a significant margin, I would expect a code. 
 
 
 ------------
@@ -92,10 +92,10 @@ Code: https://github.com/TaeSoo-Kim/TCNActionRecognition
 Accuracy on Cross Subject NTU-RGBD: **0.743**
 
 Notes:
-- Low accuracy. Old paper.(2017)
+- Low accuracy. Old paper. (2017)
 - Single stream network using Joint Positions
 - Resnet based 
-- 1D Convolution through temporal domain. All spatial domain is considered at once meaning that the spatial size of kernel is the same as spatial dimension of the input (number of joints x 3 (xyz))
+- 1D Convolution through the temporal domain. All spatial domain is considered at once meaning that the spatial size of the kernel is the same as the spatial dimension of the input (number of joints x 3 (XYZ))
 - The contribution is in interpretable action recognition. They show which motion effects a particular action.  
 
 ------------
@@ -109,12 +109,12 @@ Code: https://github.com/Qingyang-Xu/Ensem-NN
 Accuracy on Cross Subject NTU-RGBD: **0.851**
 
 Notes:
-- Using ensembles of 4 different subnets - body part net, base net, attention net etc. 
-- Introducing a channel wised attention net which is a FC+Activation+FC+Softmax
+- Using ensembles of 4 different subnets - body part net, base net, attention net, etc. 
+- Introducing a channel wised attention net which is an FC+Activation+FC+Softmax
 - Two stream 1D CNN. The idea is coming from Interpretable 3D Human Action Analysis with Temporal Convolutional Networks
 - All the subnets are trained independently. I think this is a drawback.  
-- Why would they extract the features of each body part? I don't understand. There are 5 different base-nets. The number of parameter should be enourmous.
-- In general, this paper is a nice reference to ensemble applied to skeleton-based action recoginition.
+- Why would they extract the features of each body part? I don't understand. There are 5 different base-nets. The number of the parameter should be enormous.
+- In general, this paper is a nice reference to ensemble applied to skeleton-based action recognition.
 - High accuracy. 
 
 ------------
@@ -128,16 +128,16 @@ Code:
 Accuracy on Cross Subject NTU-RGBD: **0.866**
 
 Notes:
-- Using Global and Local features. Global features are classical spatio-temporal matrix. However, local features are highly hand engineered relative Hand positions. 
-- Good example for hand engineered features, however, I think it violates the end-to-end learning, because we explicitly state that Hand features are important.(Just my opinion, no offence!)
+- Using Global and Local features. Global features are the classical spatio-temporal matrix. However, local features are highly hand engineered relative Hand positions. 
+- A good example of hand engineered features; however, I think it violates the end-to-end learning because we explicitly state that Hand features are essential.(Just my opinion, no offense!)
 - High accuracy. 
-- Two stage network: Temporal and Spatial processing. Temporal domain network is heavily using LSTM which is not good for computation time. 
-- They introduce hard sample mining by selecting the low performance actions. Complex training procedure to avoid overfitting.
+- Two-stage network: Temporal and Spatial processing. Temporal domain network is heavily using LSTM which is not suitable for computation time. 
+- They introduce hard sample mining by selecting low-performance actions. Complicated training procedure to avoid overfitting.
 - Human identification part is irrelevant to me.  
 
 ------------
 
-**7. View Adaptive Neural Networks for High Performance Skeleton-based Human Action Recognition**
+**7. View Adaptive Neural Networks for High-Performance Skeleton-based Human Action Recognition**
 
 Link: https://arxiv.org/abs/1804.07453
 
@@ -148,7 +148,7 @@ Accuracy on Cross Subject NTU-RGBD: **0.894**
 Notes:
 - Impressive accuracy 
 - No code
-- The idea is cool. They transform the skeletons with a small network so that they all will be aligned. This, surely, reduces the error caused by view variations. 
+- The idea is cool. They transform the skeletons with a small network so that they all will be aligned. This, inevitably, reduces the error caused by view variations. 
 - The parameter number is huge, around 10-20 million for state-of-the-art results. There is a good analysis of parameter number vs. accuracy in the paper.
 - There are two networks which are RNN and CNN. They fuse the output of them at the end.
  
@@ -160,5 +160,5 @@ Notes:
 ------------
 
 #### Acknowledgement 
-This work(Github REPO) has received funding from the European Unions Horizon  2020  research  and  innovation  programme  under  the Marie  Skodowska-Curie  grant  agreement  No  721619  for  the SOCRATES project. 
+This work(Github REPO) has received funding from the European Unions Horizon  2020 research and innovation programme under the Marie  Sklodowska-Curie grant agreement No  721619 for the SOCRATES project. 
 
