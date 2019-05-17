@@ -163,12 +163,13 @@ Code: https://github.com/limaosen0/AS-GCN
 Accuracy on Cross Subject NTU-RGBD: **86.1%**
 
 Notes:
-- Graph based algorithm. Their contibution: How to link the nodes. Two ideas: Actional links and structural links 
-- Actional Links are links which can link two arbitrary skeleton points. They are procuded by a module which is a encoder-decoder network. After the encoder, they get the A-Links, and then these A links are fed into a Decoder network to predict the next possible skeleton pose contrainted by the A-Links. 
-- Structural Links are links which bond the neighboring nodes. The point here is increasing the receptive field of graph convolution kernel. So many math tricks there :)  
-- GRU is presented in the actional links module, so the network MAY be slow.  
-- Code is available which is super cool, but the documentation is poor. Probably, they will "release" it in the near future. 
+- Graph-based algorithm. Their contribution: How to link the nodes. Two ideas: Actional links and structural links 
+- Actional Links are links which can link two arbitrary skeleton points. They are produced by a module which is an encoder-decoder network. After the encoder, they get the A-Links, and then these A links are fed into a Decoder network to predict the next possible skeleton pose constrained by the A-Links. 
+- Structural Links are links which bond the neighboring nodes. The point here is increasing the receptive field of the graph convolution kernel. So many math tricks there :) 
+- GRU is presented in the actional links module so the network MAY be slow.  
+- Code is available, which is super cool, but the documentation is poor. Probably, they will "release" it soon. 
 - Complicated paper, so not so easy to read. 
+- All in all, definitely a good paper; however, I have some questions in mind like ok, the initial links are super important for sure, but a good convolutional network should be able to bond or create spatial relations in the higher layers, even though their initial links are bad. This is like, each pixel of an image is connected to its 8-neighbors; however, the network can give a response to a, let's say, dog consisting of 200 pixels. **If someone understands and explains me in a pull request or issue, I will add it here and delete this comment.** 
 
 ------------
 
