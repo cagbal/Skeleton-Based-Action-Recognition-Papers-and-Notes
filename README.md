@@ -160,7 +160,7 @@ Link: https://arxiv.org/pdf/1904.12659.pdf
 
 Code: https://github.com/limaosen0/AS-GCN
 
-Accuracy on Cross Subject NTU-RGBD: **86.1%**
+Accuracy on Cross Subject NTU-RGBD: **0.861**
 
 Notes:
 - Graph-based algorithm. Their contribution: How to link the nodes. Two ideas: Actional links and structural links 
