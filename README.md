@@ -154,6 +154,24 @@ Notes:
  
 ------------
 
+**8. Actional-Structural Graph Convolutional Networks forSkeleton-based Action Recognition**
+
+Link: https://arxiv.org/pdf/1904.12659.pdf 
+
+Code: https://github.com/limaosen0/AS-GCN
+
+Accuracy on Cross Subject NTU-RGBD: **86.1%**
+
+Notes:
+- Graph based algorithm. Their contibution: How to link the nodes. Two ideas: Actional links and structural links 
+- Actional Links are links which can link two arbitrary skeleton points. They are procuded by a module which is a encoder-decoder network. After the encoder, they get the A-Links, and then these A links are fed into a Decoder network to predict the next possible skeleton pose contrainted by the A-Links. 
+- Structural Links are links which bond the neighboring nodes. The point here is increasing the receptive field of graph convolution kernel. So many math tricks there :)  
+- GRU is presented in the actional links module, so the network MAY be slow.  
+- Code is available which is super cool, but the documentation is poor. Probably, they will "release" it in the near future. 
+- Complicated paper, so not so easy to read. 
+
+------------
+
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
 
