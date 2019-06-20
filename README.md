@@ -171,6 +171,19 @@ Notes:
 - Complicated paper, so not so easy to read. 
 - All in all, definitely a good paper; however, I have some questions in mind like ok, the initial links are super important for sure, but a good convolutional network should be able to bond or create spatial relations in the higher layers, even though their initial links are bad. This is like, each pixel of an image is connected to its 8-neighbors; however, the network can give a response to a, let's say, dog consisting of 200 pixels. **If someone understands and explains me in a pull request or issue, I will add it here and delete this comment.** 
 
+**9. Skeleton-Based Action Recognition with Directed Graph Neural Networks**
+
+Link: http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Skeleton-Based_Action_Recognition_With_Directed_Graph_Neural_Networks_CVPR_2019_paper.pdf
+
+Accuracy on Cross Subject NTU-RGBD: **0.899**
+
+Notes:
+- Another Graph-based algorithm. It uses Directed Acyclic Graph (DAG) approach for the first time. Their reason is that the bone and joints were treated separately and the information extracted was not taking in the dependencies between the two. Their contribution: How to model the dependencies between the bones and the joints. 2-stream fusion of the bone and joint information to perform action recognition. Learn the topology of the graph rather than feed the input skeletal graph.
+-DAG approach: Treat bones as edges and joints as vertices. Let the centre of gravity of the skeleton be the root node and for any edge, treat the source vertex to be the one closer to the centre of gravity. 
+-Directed Graph Neural Network: It takes in the graph as input and outputs the graph with updated attributes of edge and vertex respectively. The information is extracted from the motion information from the skeleton joints to the bones.
+- Adaptive graph that inputs a graph with fixed topology and evolves with time.
+- 1D temporal convolutions to extract temporal information.
+
 ------------
 
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
