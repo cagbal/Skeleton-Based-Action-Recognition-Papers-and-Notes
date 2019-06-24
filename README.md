@@ -16,8 +16,8 @@ Feel free to contribute. No general rule. Just keep the format for each paper as
 #### Current Top 2 for NTU-RGBD Cross Subject Split: (Only using Skeleton data, not RGBD)
 |           |               Top 1              |               Top 2              |
 |:---------:|:--------------------------------:|:--------------------------------:|
-| Accuracy: |               0.894              |               0.891              |
-|   Link:   | https://arxiv.org/abs/1804.07453 | https://arxiv.org/abs/1811.04237 |
+| Accuracy: |               0.899              |               0.894              |
+|   Link:   | [Link](http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Skeleton-Based_Action_Recognition_With_Directed_Graph_Neural_Networks_CVPR_2019_paper.pdf) | [Link](https://arxiv.org/abs/1804.07453) |
 
 ### Papers:
 **1. SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL
@@ -174,6 +174,8 @@ Notes:
 **9. Skeleton-Based Action Recognition with Directed Graph Neural Networks**
 
 Link: http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Skeleton-Based_Action_Recognition_With_Directed_Graph_Neural_Networks_CVPR_2019_paper.pdf
+
+Code:
 
 Accuracy on Cross Subject NTU-RGBD: **0.899**
 
