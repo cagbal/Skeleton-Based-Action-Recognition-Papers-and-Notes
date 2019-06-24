@@ -178,7 +178,8 @@ Link: http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Skeleton-Based_A
 Accuracy on Cross Subject NTU-RGBD: **0.899**
 
 Notes:
-- Another Graph-based algorithm. It uses Directed Acyclic Graph (DAG) approach for the first time. Their reason is that the bone and joints were treated separately and the information extracted was not taking in the dependencies between the two. Their contribution: How to model the dependencies between the bones and the joints. 2-stream fusion of the bone and joint information to perform action recognition. Learn the topology of the graph rather than feed the input skeletal graph.
+- Another Graph-based algorithm. It uses a novel Directed Acyclic Graph (DAG) approach. Their reason is that the bone and joints were treated separately and the information extracted was not taking in the dependencies between the two. 
+- Their contribution: How to model the dependencies between the bones and the joints. 2-stream fusion of the bone and joint information to perform action recognition. Learn the topology of the graph rather than feed the input skeletal graph.
 -DAG approach: Treat bones as edges and joints as vertices. Let the centre of gravity of the skeleton be the root node and for any edge, treat the source vertex to be the one closer to the centre of gravity. 
 -Directed Graph Neural Network: It takes in the graph as input and outputs the graph with updated attributes of edge and vertex respectively. The information is extracted from the motion information from the skeleton joints to the bones.
 - Adaptive graph that inputs a graph with fixed topology and evolves with time.
