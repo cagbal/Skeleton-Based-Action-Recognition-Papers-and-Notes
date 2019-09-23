@@ -203,6 +203,7 @@ Notes:
 - Evaluation part is not so good. NTU-RGBD is like a standard here. However, they test it on different datasets.
 - Code is published. So, if anyone can test it on NTU-RGBD and open an Issue or PR, I would appreciate it.
 
+------------
 
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
