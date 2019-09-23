@@ -198,8 +198,8 @@ Code: https://github.com/fandulu/DD-Net
 Accuracy on Cross Subject NTU-RGBD: **Not tested on NTU-RGBD**
 
 Notes:
-- It is very very light network. Only 150K-500K params. You don't even need to do knowledge distillation to deploy this algorithm to an edge device.
-- They have three streams. One for locations of the joints. One for the temporal temporal difference with one stride. One for the temporal difference with two strides. I think the idea is amazing. I am also facing this issue every day. Some of the actions are performed slowly, and some of them are really fast. This varying strides would capture both slow and fast motions. My concern here is, though, why 1 and 2 strides. What happens if I add a stream with for three strides and one more for four strides. How can I decide? 
+- It is a really light network. Only 150K-500K params. You don't even need to do knowledge distillation to deploy this algorithm to an edge device.
+- They have three streams. One for the distance matrix of the joints. One for the temporal difference with one stride. One for the temporal difference with two strides. I think the idea is amazing. I am also facing this issue every day. Some of the actions are performed slowly, and some of them are really fast. This varying strides would capture both slow and fast motions. My concern here is, though, why 1 and 2 strides. What happens if I add a stream for three strides and one more for four strides. How can I decide? 
 - Evaluation part is not so good. NTU-RGBD is like a standard here. However, they test it on different datasets.
 - Code is published. So, if anyone can test it on NTU-RGBD and open an Issue or PR, I would appreciate it.
 
