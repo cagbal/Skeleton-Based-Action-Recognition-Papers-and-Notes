@@ -205,6 +205,20 @@ Notes:
 
 ------------
 
+**11. Deep Independently Recurrent Neural Network (IndRNN)
+
+Link: https://arxiv.org/abs/1910.06251
+
+Code: https://github.com/Sunnydreamrain/IndRNN_pytorch
+
+Accuracy on Cross Subject NTU-RGBD: 0.867
+
+Notes:
+- Independently recurrent neural network (IndRNN), a new type of RNN that can construct deep RNNs and process long sequences.  
+- Very simple.  
+
+------------
+
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
 
