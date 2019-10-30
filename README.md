@@ -221,6 +221,7 @@ Notes:
 
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
+- https://github.com/niais/Awesome-Skeleton-based-Action-Recognition
 
 ------------
 
