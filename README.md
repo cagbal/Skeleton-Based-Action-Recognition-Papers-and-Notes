@@ -141,13 +141,12 @@ Notes:
 
 Link: https://arxiv.org/abs/1804.07453
 
-Code: 
+Code: https://github.com/microsoft/View-Adaptive-Neural-Networks-for-Skeleton-based-Human-Action-Recognition
 
 Accuracy on Cross Subject NTU-RGBD: **0.894**
 
 Notes:
 - Impressive accuracy 
-- No code
 - The idea is cool. They transform the skeletons with a small network so that they all will be aligned. This, inevitably, reduces the error caused by view variations. 
 - The parameter number is huge, around 10-20 million for state-of-the-art results. There is a good analysis of parameter number vs. accuracy in the paper.
 - There are two networks which are RNN and CNN. They fuse the output of them at the end.
