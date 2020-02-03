@@ -190,7 +190,7 @@ Notes:
 
 **10. Make Skeleton-based Action Recognition ModelSmaller, Faster and Better**
 
-Link: https://arxiv.org/abs/1704.07595
+Link: https://arxiv.org/abs/1907.09658
 
 Code: https://github.com/fandulu/DD-Net
 
