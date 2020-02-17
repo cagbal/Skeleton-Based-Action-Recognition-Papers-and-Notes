@@ -218,6 +218,21 @@ Notes:
 
 ------------
 
+**12. Two-Stream Adaptive Graph Convolutional Networks for Skeleton-Based Action Recognition**
+
+Link: http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Two-Stream_Adaptive_Graph_Convolutional_Networks_for_Skeleton-Based_Action_Recognition_CVPR_2019_paper.pdf
+
+Code: https://github.com/lshiwjx/2s-AGCN
+
+Accuracy on Cross Subject NTU-RGBD: **0.885**
+
+Notes:
+- Another Graph-based convolutional network approach. It combines information from two streams: joint and bone stream. It is one of the first approaches to take into account, second-order information like bone-stream that takes into account the direction and angle between the bones to model the action.
+- It builds upon ST-GCN model but the topology of the graph is not fixed. It is adaptively changing depending upon the action sample in an end-to-end manner. This helps in increasing the robustness of the model to new actions. 
+
+------------
+
+
 **Other GITHUB Repos for Skeleton-based Action Recognition Papers**
 - https://github.com/XiaoCode-er/Skeleton-Based-Action-Recognition-Papers
 - https://github.com/niais/Awesome-Skeleton-based-Action-Recognition
