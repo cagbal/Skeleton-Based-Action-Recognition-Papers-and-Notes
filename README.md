@@ -170,6 +170,11 @@ Notes:
 - Complicated paper, so not so easy to read. 
 - All in all, definitely a good paper; however, I have some questions in mind like ok, the initial links are super important for sure, but a good convolutional network should be able to bond or create spatial relations in the higher layers, even though their initial links are bad. This is like, each pixel of an image is connected to its 8-neighbors; however, the network can give a response to a, let's say, dog consisting of 200 pixels. **If someone understands and explains me in a pull request or issue, I will add it here and delete this comment.** 
 
+------------
+
+
+
+
 **9. Skeleton-Based Action Recognition with Directed Graph Neural Networks**
 
 Link: http://openaccess.thecvf.com/content_CVPR_2019/papers/Shi_Skeleton-Based_Action_Recognition_With_Directed_Graph_Neural_Networks_CVPR_2019_paper.pdf
