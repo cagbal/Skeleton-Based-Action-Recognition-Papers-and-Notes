@@ -23,7 +23,7 @@ Feel free to contribute. No general rule. Just keep the format for each paper as
 **1. SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL
 NETWORKS**
 
-Link: https://aarxiv.org/abs/1704.07595
+Link: https://arxiv.org/abs/1704.07595
 
 Code:
 
